@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="STYLESHEET" type="text/css" href="./estilo.css">
+        <script src="./codigo.js" ></script>
+    </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px" onload="llamarApi()">
+
+<!-- Contenido Página -->
+<div class="w3-main" style="margin-left:100px">
+
+  <!-- Encabezado de la página -->
+  <header id="principal">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>CONEXIÓN API ESIOS REE</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      
+        <p id="FechaHoy"><p>
+
+    </div>
+    </div>
+  </header>
+  
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora0">Tramo Horario</p>
+        <p id="pmwh0"></p><br>
+        <p id="pkwh0"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora1">Tramo Horario</p>
+        <p id="pmwh1"></p><br>
+        <p id="pkwh1"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora2">Tramo Horario</p>
+        <p id="pmwh2"></p><br>
+        <p id="pkwh2"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora3">Tramo Horario</p>
+        <p id="pmwh3"></p><br>
+        <p id="pkwh3"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora4">Tramo Horario</p>
+        <p id="pmwh4"></p><br>
+        <p id="pkwh4"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora5">Tramo Horario</p>
+        <p id="pmwh5"></p><br>
+        <p id="pkwh5"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora6">Tramo Horario</p>
+        <p id="pmwh6"></p><br>
+        <p id="pkwh6"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora7">Tramo Horario</p>
+        <p id="pmwh7"></p><br>
+        <p id="pkwh7"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora8">Tramo Horario</p>
+        <p id="pmwh8"></p><br>
+        <p id="pkwh8"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora9">Tramo Horario</p>
+        <p id="pmwh9"></p><br>
+        <p id="pkwh9"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora10">Tramo Horario</p>
+        <p id="pmwh10"></p><br>
+        <p id="pkwh10"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora11">Tramo Horario</p>
+        <p id="pmwh11"></p><br>
+        <p id="pkwh11"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora12">Tramo Horario</p>
+        <p id="pmwh12"></p><br>
+        <p id="pkwh12"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora13">Tramo Horario</p>
+        <p id="pmwh13"></p><br>
+        <p id="pkwh13"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora14">Tramo Horario</p>
+        <p id="pmwh14"></p><br>
+        <p id="pkwh14"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora15">Tramo Horario</p>
+        <p id="pmwh15"></p><br>
+        <p id="pkwh15"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora16">Tramo Horario</p>
+        <p id="pmwh16"></p><br>
+        <p id="pkwh16"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora17">Tramo Horario</p>
+        <p id="pmwh17"></p><br>
+        <p id="pkwh17"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora18">Tramo Horario</p>
+        <p id="pmwh18"></p><br>
+        <p id="pkwh18"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora19">Tramo Horario</p>
+        <p id="pmwh19"></p><br>
+        <p id="pkwh19"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora20">Tramo Horario</p>
+        <p id="pmwh20"></p><br>
+        <p id="pkwh20"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora21">Tramo Horario</p>
+        <p id="pmwh21"></p><br>
+        <p id="pkwh21"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora22">Tramo Horario</p>
+        <p id="pmwh22"></p><br>
+        <p id="pkwh22"></p><br>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-container w3-white">
+        <p id="hora23">Tramo Horario</p>
+        <p id="pmwh23"></p><br>
+        <p id="pkwh23"></p><br>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+</div>
+</body>
+</html>
